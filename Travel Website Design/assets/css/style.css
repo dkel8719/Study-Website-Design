@@ -352,3 +352,36 @@ input {
 .about-img-two:hover {
   transform: var(--img-scale);
 }
+
+/* =============== discover =============== */
+.discover-card {
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+}
+
+.discover-data {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+.discover-title,
+.discover-description {
+  color: var(--white-color);
+}
+
+.discover-title {
+  font-size: var(--large-font-size);
+  margin-bottom: var(--rem-0-25);
+}
+
+.discover-description {
+  display: block;
+  font-size: var(--medium-font-size);
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}

@@ -1,3 +1,4 @@
+// ======== show menu ==============
 const navToggle = document.getElementById('nav-toggle')
 const navMenu = document.getElementById('nav-menu')
 const navclose = document.getElementById('nav-close')
@@ -13,4 +14,17 @@ if(navclose){
     navMenu.classList.remove('show-menu')
   })
 }
+
+// ========== swiper =============
+let swiper = new Swiper(".discover-container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 32,
+  coverflowEffect: {
+    rotate: 0,
+  }
+});
 
