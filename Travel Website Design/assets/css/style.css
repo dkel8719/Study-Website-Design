@@ -310,3 +310,45 @@ input {
 .button:hover {
   background-color: var(--first-color-alt);
 }
+
+/* ============ about =============== */
+.about-data {
+  text-align: center;
+}
+
+.about-container {
+  row-gap: 2.5rem;
+}
+
+.about-description {
+  margin-bottom: var(--rem-2);
+}
+
+.about-img {
+  display: flex;
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-img-overlay {
+  overflow: var(--img-hidden);
+}
+
+.about-img-one {
+  width: 130px;
+}
+
+.about-img-two {
+  width: 180px;
+}
+
+.about-img-one,
+.about-img-two {
+  transition: var(--img-transition);
+}
+
+.about-img-one:hover,
+.about-img-two:hover {
+  transform: var(--img-scale);
+}
