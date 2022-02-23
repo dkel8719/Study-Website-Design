@@ -451,3 +451,30 @@ input {
   top: 2rem;
   right: 0;
 }
+
+/* ============== video ================= */
+.video-container {
+  padding-bottom: 1rem;
+}
+
+.video-description {
+  text-align: center;
+  margin-bottom: var(--rem-2-5);
+}
+
+.video-content {
+  position: relative;
+}
+
+.video-button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 1rem;
+  bottom: -1rem;
+  padding: 1rem 1.5rem;
+}
+
+.video-button-icon {
+  font-size: 1.25rem;
+}

@@ -15,6 +15,7 @@ if(navclose){
   })
 }
 
+// ================== swiper ===================== 
 var swiper = new Swiper(".discover-container", {
   effect: "coverflow",
   grabCursor: true,
@@ -31,3 +32,28 @@ var swiper = new Swiper(".discover-container", {
   },
 });
 
+// ===================== video ========================
+const videoFile = document.getElementById('video-file')
+const videoButton = document.getElementById('video-button')
+const videoIcon = document.getElementById('video-icon')
+
+function playVideo(){
+  if(videoFile.paused){
+    videoFile.play();
+    videoIcon.classList.add('ri-pause-line')
+    videoIcon.classList.remove('ri-play-line')
+  } else {
+    videoFile.pause();
+    videoIcon.classList.remove('re-pause-line')
+    videoIcon.classList.add('ri-play-line')
+  }
+}
+
+videoButton.addEventListener('click', playVideo)
+
+function endedVideo(){
+  videoIcon.classList.remove('ri-pause-line');
+  videoIcon.classList.add('ri-play-line');
+}
+
+videoFile.addEventListener('ended', endedVideo)
