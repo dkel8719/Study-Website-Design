@@ -15,16 +15,19 @@ if(navclose){
   })
 }
 
-// ========== swiper =============
-let swiper = new Swiper(".discover-container", {
+var swiper = new Swiper(".discover-container", {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  loop: true,
-  spaceBetween: 32,
+  loop:true,
+  spaceBetween:32,
   coverflowEffect: {
     rotate: 0,
-  }
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable:true
+  },
 });
 
