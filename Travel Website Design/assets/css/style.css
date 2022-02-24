@@ -803,3 +803,242 @@ input {
 }
 
 /* ================== 768px ====================== */
+@media screen and (min-width: 768px) {
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+  }
+
+  .nav-menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+    transition: none;
+    background-color: transparent;
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .nav-toggle,
+  .nav-close,
+  .change-theme-name {
+    display: none;
+  }
+
+  .nav-link {
+    color: var(--white-color);
+    text-transform: initial;
+  }
+
+  .nav-link:hover {
+    color: var(--white-color);
+  }
+
+  .nav-dark {
+    position: initial;
+  }
+
+  .change-theme {
+    color: var(--white-color);
+  }
+
+  .active-link {
+    color: var(--white-color);
+  }
+
+  .active-link::before {
+    background-color: var(--white-color);
+  }
+
+  .scroll-header .nav-link {
+    color: var(--title-color);
+  }
+
+  .scroll-header .active-link {
+    color: var(--title-color);
+  }
+
+  .scroll-header .active-link::before {
+    background-color: var(--title-color);
+  }
+
+  .scroll-header .change-theme {
+    color: var(--title-color);
+  }
+
+  .section {
+    padding: 7rem 0 2.5rem;
+  }
+
+  .home-container {
+    padding: 0;
+    grid-template-rows: 1.5fr 0.5fr;
+  }
+
+  .home-data {
+    align-self: flex-end;
+  }
+
+  .home-social {
+    flex-direction: row;
+    column-gap: 3rem;
+    align-items: center;
+  }
+
+  .home-info {
+    padding: 1.5rem 1rem;
+    bottom: 3rem;
+    width: 40%;
+  }
+
+  .home-info-img {
+    width: 256px;
+  }
+
+  /* ================= section about ============== */
+  .about-title {
+    font-size: var(--x-large-font-size);
+  }
+
+  .about {
+    padding-top: 4rem;
+  }
+
+  .about-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about-data,
+  .about-title {
+    text-align: start;
+  }
+  /* ======================= section discover ======================= */
+  .discover .section-title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 4rem;
+  }
+
+  .discover-container {
+    padding-bottom: 2rem;
+  }
+
+  .discover-card {
+    width: 320px;
+  }
+
+  .discover-data {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1rem;
+  }
+
+  .discover-title {
+    font-size: var(--x-large-font-size);
+    margin-bottom: var(--rem-1);
+  }
+
+  .discover-description {
+    font-size: var(--large-font-size);
+  }
+
+  /* ============= section experience ================= */
+  .experience {
+    padding-bottom: 4rem;
+  }
+  .experience .section-title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 4rem;
+  }
+
+  .experience-number {
+    font-size: var(--x-large-font-size);
+    margin-bottom: var(--rem-0-75);
+  }
+
+  .experience-description {
+    font-size: var(--large-font-size);
+  }
+
+  /* =============== section video ===================== */
+  .video-container {
+    display: grid;
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+
+  .video .section-title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 3rem;
+  }
+
+  .video-description {
+    font-size: var(--x-large-font-size);
+  }
+
+  .video-button-icon {
+    font-size: 3rem;
+  }
+
+  /* ================== section place ======================= */
+  .place-card,
+  .place-img {
+    height: 288px;
+  }
+
+  .place-container {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .place-rating-icon {
+    font-size: var(--large-font-size);
+    margin-right: var(--rem-0-25);
+  }
+
+  .place-rating-number {
+    font-size: var(--large-font-size);
+  }
+
+  /* ============== section subscribe =================== */
+  .subscribe-bg {
+    background: none;
+    padding: 0;
+  }
+
+  .subscribe-container {
+    background-color: var(--first-color);
+    padding: 3.5rem;
+  }
+
+  .subscribe-description {
+    font-size: var(--large-font-size);
+  }
+
+  /* ============= footer =================== */
+  .footer-rights {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 640px) {
+  .home-container,
+  .home-img {
+    height: 640px;
+  }
+}
